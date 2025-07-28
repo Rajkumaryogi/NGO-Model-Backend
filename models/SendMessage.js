@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const SendMessageSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
+    email: { type: String, required: true },
     message: { type: String, required: true },
   },
     // Enable timestamps to automatically add 'createdAt' and 'updatedAt' fields
